@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -8,7 +8,282 @@
 </head>
 
 <body>
+  <header class="header">
+    <a href="index.html" class="header__logo">Иванова София</a>
+    <nav class="header__menu">
+      <a href="#" class="menu__link">Главная</a>
+      <a href="#" class="menu__link">Обо мне</a>
+      <a href="#" class="menu__link">Навыки</a>
+      <a href="#" class="menu__link">Проекты</a>
+      <a href="#" class="menu__link">Образование/Опыт</a>
+      <a href="#" class="menu__link">Контакты</a>
+    </nav>
+    <a href="#" class="header__resume" download="#">Резюме</a>
+    <button type="button" id="button" class="header__button">🌛☀🌞</button>
+  </header>
 
+  <main class="main">
+    <section class="hero">
+      <img src="image/name.svg" alt="logo" class="hero__logo">
+      <h1 class="hero__title">Привет, я София. Junior Web Developer</h1>
+      <p class="hero__subtitle">Верстаю адаптивные и быстрые интерфейсы. Изучаю JavaScript.<br>Ищу первую
+        стажировку и небольшие фриланс-проекты.</p>
+      <div class="hero__button">
+        <a href="#" class="hero__link">Посмотреть проекты</a>
+        <a href="#" class="hero__link">Написать мне</a>
+      </div>
+    </section>
+
+    <section class="about">
+      <p class="about__text">
+        Я студентка 2 курса по направлению «Информационные системы и программирование». Веб-разработкой увлеклась на
+        первом курсе.<br>
+        Люблю создавать интерфейсы, которые одинаково хорошо выглядят и на десктопе, и на телефоне. Сейчас активно
+        изучаю HTML, CSS, JavaScript чтобы делать не просто красивую вёрстку, но и интерактивные приложения.<br>
+        Люблю разбираться в новых технологиях и
+        постоянно прокачиваю навыки.
+      </p>
+
+      <div class="about__section">
+        <div class="about__card">
+          <h3 class="card__title">Что я изучаю сейчас</h3>
+          <p class="card__text">JavaScript, HTML, CSS. В ближайшие полгода хочу пройти стажировку.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="skills">
+
+      <h2 class="skills__title">Навыки</h2>
+
+      <div class="skills__section">
+
+        <h2 class="skills__technologies">💻 Frontend</h2>
+
+        <div class="skills__bar">
+          <div class="bar__title">HTML5</div>
+          <div class="bar__level">Средний</div>
+          <div class="bar__track">
+            <div class="bar__fill" data-width="85%"></div>
+          </div>
+        </div>
+
+        <div class="skills__bar">
+          <div class="bar__title">CSS3</div>
+          <div class="bar__level">Базовый</div>
+          <div class="bar__track">
+            <div class="bar__fill" data-width="70%"></div>
+          </div>
+        </div>
+
+        <div class="skills__bar">
+          <div class="bar__title">JavaScript</div>
+          <div class="bar__level">Базовый</div>
+          <div class="bar__track">
+            <div class="bar__fill" data-width="40%"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="skills__section">
+
+        <h2 class="skills__technologies">Инструменты</h2>
+
+        <div class="skills__bar">
+          <div class="bar__title">Git</div>
+          <div class="bar__level">Начальный</div>
+          <div class="bar__track">
+            <div class="bar__fill" data-width="20%"></div>
+          </div>
+        </div>
+
+        <div class="skills__bar">
+          <div class="bar__title">Figma</div>
+          <div class="bar__level">Средний</div>
+          <div class="bar__track">
+            <div class="bar__fill" data-width="60%"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="projects" id="projects">
+
+      <div class="projects__section">
+
+        <h2 class="projects__name">Веб-приложение «ЭлектроДрайв»</h2>
+        <p class="projects__text">
+          Веб-приложение «ЭлектроДрайв» предназначено для аренды экологичного
+          транспорта. Пользователь должен пройти регистрацию, предоставив свои персональные данные. После регистрации
+          пользователь может оформить аренду,
+          указав тип используемого автотранспорта или легкого электротранспорта, дату и время
+          начала аренды, желаемую длительность и контактный номер телефона.
+        </p>
+
+        <div class="projects__tegs">
+          <div class="projects__teg">HTML5</div>
+          <div class="projects__teg">CSS3</div>
+          <div class="projects__teg">JavaScript</div>
+        </div>
+
+        <div class="projects__images">
+          <img src="image/progect1.png" alt="project1" class="projects__image">
+          <img src="image/progect1_2.png" alt="project1" class="projects__image">
+          <img src="image/progect1_3.png" alt="project1" class="projects__image">
+        </div>
+
+      </div>
+
+      <div class="projects__section">
+
+        <h2 class="projects__name">Веб-приложение «Уютный уголок»</h2>
+        <p class="projects__text">
+          Веб-приложение «Уютный уголок» предназначено для бронирования переговорных комнат,
+          конференц-залов и рабочих пространств. Пользователь должен пройти регистрацию, предоставив свои персональные
+          данные.
+        </p>
+
+        <div class="projects__tegs">
+          <div class="projects__teg">HTML5</div>
+          <div class="projects__teg">CSS3</div>
+          <div class="projects__teg">JavaScript</div>
+        </div>
+
+        <div class="projects__images">
+          <img src="image/progect2.png" alt="project2" class="projects__image">
+          <img src="image/progect2_2.png" alt="project2" class="projects__image">
+          <img src="image/progect2_3.png" alt="project2" class="projects__image">
+        </div>
+
+      </div>
+
+      <div class="projects__section">
+
+        <h2 class="projects__name">Веб-приложение «КейтерингЗаказ»</h2>
+        <p class="projects__text">
+          Веб-приложение «КейтерингЗаказ» для заказа выездного обслуживания мероприятий. Клиенты выбирают меню, дату и
+          время, количество персон.
+        </p>
+
+        <div class="projects__tegs">
+          <div class="projects__teg">HTML5</div>
+          <div class="projects__teg">CSS3</div>
+          <div class="projects__teg">JavaScript</div>
+        </div>
+
+        <div class="projects__images">
+          <img src="image/progect3.png" alt="project3" class="projects__image">
+          <img src="image/progect3_2.png" alt="project3" class="projects__image">
+          <img src="image/progect1_3.png" alt="project3" class="projects__image">
+        </div>
+
+      </div>
+
+      <div class="projects__section">
+
+        <h2 class="projects__name">Веб-приложение «Я буду кушац»</h2>
+        <p class="projects__text">Веб-приложение «Я буду кушац» предназначено для бронирования столиков в ресторане.
+          Пользователь должен пройти регистрацию, предоставив свои персональные данные.
+        </p>
+
+        <div class="projects__tegs">
+          <div class="projects__teg">HTML5</div>
+          <div class="projects__teg">CSS3</div>
+          <div class="projects__teg">JavaScript</div>
+        </div>
+
+        <div class="projects__images">
+          <img src="image/progect1.png" alt="project1" class="projects__image">
+          <img src="image/progect1_2.png" alt="project1" class="projects__image">
+          <img src="image/progect1_3.png" alt="project1" class="projects__image">
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="education">
+
+      <ul class="education__list">
+
+        <li class="education__point">
+          <h2 class="point__time">Апрель 2026</h2>
+          <h3 class="point__title">Пет-проект</h3>
+          <p class="point__text">
+            Создала свой макет для интернет-магазина «Фермерский дворик» по продаже фермерских мясных продуктов.
+          </p>
+        </li>
+
+        <li class="education__point">
+          <h2 class="point__time">Октябрь 2025</h2>
+          <h3 class="point__title">JavaScript</h3>
+          <p class="point__text">
+            Знакомство и изучение первого языка программирования JavaScript.
+          </p>
+        </li>
+
+        <li class="education__point">
+          <h3 class="point__time">Апрель 2025</h3>
+          <h3 class="point__title">Курс «Веб-вёрстка для начинающих»</h3>
+          <p class="point__text">
+            Самостоятельно прошла онлайн-курс. Изучила HTML и CSS. Сверстала первый макет сайта.
+          </p>
+        </li>
+
+        <li class="education__point">
+          <h2 class="point__time">Сентябрь 2024</h2>
+          <h3 class="point__title">Поступление в колледж</h3>
+          <p class="point__text">
+            Начало обучения по специальности «Информационные системы и программирование». Первое знакомство с HTML и
+            CSS.
+          </p>
+        </li>
+
+      </ul>
+
+    </section>
+
+    <section class="contacts">
+
+      <form action="#" class="form">
+
+        <div class="form__section">
+          <label class="form__label">Имя</label>
+          <input type="text" class="form__input" id="name" name="name" placeholder="Ваше имя" required>
+        </div>
+
+        <div class="form__section">
+          <label class="form__label">Email</label>
+          <input type="email" class="form__input" id="email" name="email" placeholder="yandex@email.ru" required>
+        </div>
+        <textarea name="message" id="message" class="form__textarea" placeholder="Сообщение..." required></textarea>
+        <button type="submit" class="form__button">Отправить</button>
+      </form>
+
+      <div class="contacts__links">
+        <a href="#" class="contacts__link">
+          <div class="link__icon">📧</div> si737844@gmail.com
+        </a>
+        <a href="#" class="contacts__link">
+          <div class="link__icon">✈</div> Telegram: Sofia
+        </a>
+        <a href="#" class="contacts__link">
+          <div class="link__icon">🔵</div> GitVerse: ivanova
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p class="footer__copy">
+      &copy; «Сделано с ❤️ в 2026»
+    </p>
+  </footer>
 </body>
 
 </html>
