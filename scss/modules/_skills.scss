@@ -2,14 +2,34 @@
 @use 'mixin' as *;
 
 .skills {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    padding-top: 40px;
 
     // .skills__title
+    &__title {
+        text-align: center;
+        padding: 10px;
+        font-size: 2.1rem;
+    }
 
-    &__title {}
+    // .skills__items
+    &__items {
+        display: grid;
+        gap: 100px;
+        padding: 20px 40px;
+        grid-template-columns: repeat(2, 1fr);
+        border-radius: 20px;
+        background-color: light($primary, 25);
+    }
+
 
     // .skills__section
-
-    &__section {}
+    &__section {
+        display: grid;
+        gap: 20px;
+    }
 
     // .skills__technologies
 
@@ -17,24 +37,33 @@
 
     // .skills__bar
 
-    &__bar {}
+    &__bar {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+    }
 }
 
 .bar {
 
-    // .bar__title
+    // .bar__group
+    &__group {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 
+    // .bar__title
     &__title {}
 
     // .bar__level
-
-    &__level {}
+    &__level {
+        text-align: right;
+    }
 
     // .bar__track
-
     &__track {}
 
     // .bar__fill
-
-    &__fill {}
+    &__fill {
+        width: 400px;
+    }
 }

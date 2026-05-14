@@ -5,13 +5,14 @@
     display: grid;
     gap: 20px;
     padding: 20px;
+    padding-top: 40px;
     place-items: center;
 
     // .about__title
     &__title {
         text-align: center;
         padding: 10px;
-        font-size: 2rem;
+        font-size: 2.1rem;
     }
 
 
@@ -50,7 +51,7 @@
 
 
     &__title {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
 
     // .card__text
@@ -65,5 +66,9 @@
 
     // .card__point
 
-    &__point {}
+    &__point {
+        font-size: 1.2rem;
+        list-style-type: '✔';
+        padding: 5px 10px;
+    }
 }
