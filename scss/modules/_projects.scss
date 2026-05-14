@@ -1,0 +1,33 @@
+@use 'color' as *;
+@use 'mixin' as *;
+
+.projects {
+
+    // .projects__section
+
+    &__section {}
+
+    // .projects__name
+
+    &__name {}
+
+    // .projects__text
+
+    &__text {}
+
+    // .projects__tegs
+
+    &__tegs {}
+
+    // .projects__teg
+
+    &__teg {}
+
+    // .projects__images
+
+    &__images {}
+
+    // .projects__image
+
+    &__image {}
+}

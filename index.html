@@ -5,25 +5,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Портфолио</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
+  <!-- Шапка сайта -->
   <header class="header">
+
     <a href="index.html" class="header__logo">Иванова София</a>
+
     <nav class="header__menu">
-      <a href="#" class="menu__link">Главная</a>
-      <a href="#" class="menu__link">Обо мне</a>
-      <a href="#" class="menu__link">Навыки</a>
-      <a href="#" class="menu__link">Проекты</a>
-      <a href="#" class="menu__link">Образование/Опыт</a>
-      <a href="#" class="menu__link">Контакты</a>
+      <a href="#hero" class="menu__link">Главная</a>
+      <a href="#about" class="menu__link">Обо мне</a>
+      <a href="#skills" class="menu__link">Навыки</a>
+      <a href="#projects" class="menu__link">Проекты</a>
+      <a href="#education" class="menu__link">Образование/Опыт</a>
+      <a href="#contacts" class="menu__link">Контакты</a>
     </nav>
-    <a href="#" class="header__resume" download="#">Резюме</a>
-    <button type="button" id="button" class="header__button">🌛☀🌞</button>
+
+    <a href="#" class="header__resume" download="resume.pdf">Резюме</a>
+
+    <button type="button" id="button" class="header__button">🌛</button>
+
   </header>
 
   <main class="main">
-    <section class="hero">
+
+    <!-- Снкция первый экран -->
+    <section class="hero" id="hero">
+
       <img src="image/name.svg" alt="logo" class="hero__logo">
       <h1 class="hero__title">Привет, я София. Junior Web Developer</h1>
       <p class="hero__subtitle">Верстаю адаптивные и быстрые интерфейсы. Изучаю JavaScript.<br>Ищу первую
@@ -32,9 +43,11 @@
         <a href="#" class="hero__link">Посмотреть проекты</a>
         <a href="#" class="hero__link">Написать мне</a>
       </div>
+
     </section>
 
-    <section class="about">
+    <!-- Снкция обо мне -->
+    <section class="about" id="about">
       <p class="about__text">
         Я студентка 2 курса по направлению «Информационные системы и программирование». Веб-разработкой увлеклась на
         первом курсе.<br>
@@ -45,15 +58,28 @@
       </p>
 
       <div class="about__section">
+
         <div class="about__card">
           <h3 class="card__title">Что я изучаю сейчас</h3>
           <p class="card__text">JavaScript, HTML, CSS. В ближайшие полгода хочу пройти стажировку.</p>
+        </div>
+
+        <div class="about__card">
+          <h3 class="card__title">Soft skills</h3>
+
+          <ul class="card__list">
+            <li class="card__point">Умею работать в команде</li>
+            <li class="card__point">Не боюсь задавать вопросы</li>
+            <li class="card__point">Соблюдаю дедлайны</li>
+          </ul>
+
         </div>
       </div>
 
     </section>
 
-    <section class="skills">
+    <!-- Снкция навыки -->
+    <section class="skills" id="skills">
 
       <h2 class="skills__title">Навыки</h2>
 
@@ -111,6 +137,7 @@
 
     </section>
 
+    <!-- Снкция проекты -->
     <section class="projects" id="projects">
 
       <div class="projects__section">
@@ -206,7 +233,8 @@
 
     </section>
 
-    <section class="education">
+    <!-- Снкция образование -->
+    <section class="education" id="education">
 
       <ul class="education__list">
 
@@ -247,7 +275,8 @@
 
     </section>
 
-    <section class="contacts">
+    <!-- Снкция контакты -->
+    <section class="contacts" id="contacts">
 
       <form action="#" class="form">
 
@@ -279,11 +308,13 @@
 
   </main>
 
+  <!-- Подвал сайта -->
   <footer class="footer">
     <p class="footer__copy">
       &copy; «Сделано с ❤️ в 2026»
     </p>
   </footer>
+
 </body>
 
 </html>

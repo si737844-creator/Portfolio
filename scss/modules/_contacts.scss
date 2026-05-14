@@ -1,0 +1,43 @@
+@use 'color' as *;
+@use 'mixin' as *;
+
+.contacts {
+
+    // .contacts__links
+
+    &__links {}
+
+    // .contacts__link
+
+    &__link {}
+}
+
+.form {
+
+    // .form__section
+
+    &__section {}
+
+    // .form__label
+
+    &__label {}
+
+    // .form__input
+
+    &__input {}
+
+    // .form__textarea
+
+    &__textarea {}
+
+    // .form__button
+
+    &__button {}
+}
+
+.link {
+
+    // .link__icon
+
+    &__icon {}
+}

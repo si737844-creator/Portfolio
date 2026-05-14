@@ -1,0 +1,40 @@
+@use 'color' as *;
+@use 'mixin' as *;
+
+.skills {
+
+    // .skills__title
+
+    &__title {}
+
+    // .skills__section
+
+    &__section {}
+
+    // .skills__technologies
+
+    &__technologies {}
+
+    // .skills__bar
+
+    &__bar {}
+}
+
+.bar {
+
+    // .bar__title
+
+    &__title {}
+
+    // .bar__level
+
+    &__level {}
+
+    // .bar__track
+
+    &__track {}
+
+    // .bar__fill
+
+    &__fill {}
+}

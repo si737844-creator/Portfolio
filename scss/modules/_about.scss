@@ -1,0 +1,36 @@
+@use 'color' as *;
+@use 'mixin' as *;
+
+.about {
+
+    // .about__text
+
+    &__text {}
+
+    // .about__section
+
+    &__section {}
+
+    // .about__card
+
+    &__card {}
+}
+
+.card {
+
+    // .card__title
+
+    &__title {}
+
+    // .card__text
+
+    &__text {}
+
+    // .card__list
+
+    &__list {}
+
+    // .card__point
+
+    &__point {}
+}

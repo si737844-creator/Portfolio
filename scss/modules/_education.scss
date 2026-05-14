@@ -1,0 +1,28 @@
+@use 'color' as *;
+@use 'mixin' as *;
+
+.education {
+
+    // .education__list
+
+    &__list {}
+
+    // .education__point
+
+    &__point {}
+}
+
+.point {
+
+    // .point__time
+
+    &__time {}
+
+    // .point__title
+
+    &__title {}
+
+    // .point__text
+
+    &__text {}
+}

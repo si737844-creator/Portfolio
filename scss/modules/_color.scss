@@ -1,0 +1,14 @@
+@use 'sass:color';
+
+$primary: цвет;
+$secondary: цвет;
+$accent: цвет;
+$error: цвет;
+
+@function light($color, $amount: 0) {
+    @return color.adjust($color, $lightness: $amount * 1%);
+}
+
+@function dark($color, $amount: 0) {
+    @return color.adjust($color, $lightness: $amount * -1%);
+}

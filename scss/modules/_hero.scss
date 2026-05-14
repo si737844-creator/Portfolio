@@ -1,0 +1,25 @@
+@use 'color' as *;
+@use 'mixin' as *;
+
+.hero {
+
+    // .hero__logo
+
+    &__logo {}
+
+    // .hero__title
+
+    &__title {}
+
+    // .hero__subtitle
+
+    &__subtitle {}
+
+    // .hero__button
+
+    &__button {}
+
+    // .hero__link
+
+    &__link {}
+}
