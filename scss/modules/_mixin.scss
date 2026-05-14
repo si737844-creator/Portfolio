@@ -32,3 +32,26 @@
     }
 
 }
+
+@mixin input {
+
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    outline: none;
+    // border: 2px solid $accent;
+    border-radius: 10px;
+    resize: vertical;
+
+
+    width: 100%;
+    font-size: 1.1rem;
+
+    &:focus {
+        border: 2px solid $accent;
+    }
+
+    &:hover {
+        border: 2px solid $accent;
+    }
+}

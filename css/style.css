@@ -218,6 +218,92 @@ body {
   padding: 5px 10px;
 }
 
+.contacts {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  padding-top: 40px;
+}
+.contacts__title {
+  text-align: center;
+  font-size: 2.1rem;
+}
+.contacts__links {
+  display: grid;
+  gap: 20px;
+}
+.contacts__link {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #0f172a;
+  border: 2px solid #0f172a;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: rgb(156.5219512195, 192.1951219512, 250.4780487805);
+}
+
+.form {
+  display: grid;
+  gap: 20px;
+  background-color: rgb(21.7105263158, 33.2894736842, 60.7894736842);
+  min-width: 1000px;
+  min-height: 500px;
+  padding: 30px 40px;
+  border-radius: 30px;
+  border: 5px solid #3B82F6;
+}
+.form__section {
+  display: grid;
+}
+.form__label {
+  font-size: 1.2rem;
+  color: #F9FAFB;
+}
+.form__input {
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  outline: none;
+  border-radius: 10px;
+  resize: vertical;
+  width: 100%;
+  font-size: 1.1rem;
+}
+.form__input:focus {
+  border: 2px solid #0f172a;
+}
+.form__input:hover {
+  border: 2px solid #0f172a;
+}
+.form__textarea {
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 1.2rem;
+}
+.form__textarea:hover {
+  border: 2px solid #0f172a;
+}
+.form__button {
+  font-size: 1.5rem;
+  border: 1px solid #3B82F6;
+  border-radius: 20px;
+  background-color: rgb(8.912195122, 79.2195121951, 194.087804878);
+  color: #F9FAFB;
+  font-size: 1rem;
+  transition: all 0.5s;
+  text-decoration: none;
+  padding: 15px;
+  text-align: center;
+}
+.form__button:hover {
+  background-color: #F9FAFB;
+  color: #0f172a;
+  border: 1px solid #3B82F6;
+}
+.form__button {
+  font-weight: bold;
+}
+
 .education {
   display: grid;
   gap: 20px;
@@ -245,9 +331,6 @@ body {
   gap: 5px;
 }
 
-.point__time {
-  list-style-type: disc;
-}
 .point__text {
   font-size: 1.2rem;
 }

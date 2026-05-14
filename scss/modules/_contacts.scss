@@ -2,46 +2,83 @@
 @use 'mixin' as *;
 
 .contacts {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    padding-top: 40px;
 
     // .contacts__title
-    &__title {}
+    &__title {
+        text-align: center;
+        font-size: 2.1rem;
+    }
 
 
     // .contacts__links
 
-    &__links {}
+    &__links {
+        display: grid;
+        gap: 20px;
+    }
 
     // .contacts__link
 
-    &__link {}
+    &__link {
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: $accent;
+        border: 2px solid $accent;
+        border-radius: 20px;
+        padding: 20px;
+        background-color: light($primary, 20);
+    }
 }
 
 .form {
+    display: grid;
+    gap: 20px;
+    background-color: light($accent, 5);
+    min-width: 1000px;
+    min-height: 500px;
+    padding: 30px 40px;
+    border-radius: 30px;
+    border: 5px solid $primary;
 
     // .form__section
-
-    &__section {}
+    &__section {
+        display: grid;
+    }
 
     // .form__label
 
-    &__label {}
+    &__label {
+        font-size: 1.2rem;
+        color: $tertiary;
+    }
 
     // .form__input
 
-    &__input {}
+    &__input {
+        @include input;
+    }
 
     // .form__textarea
 
-    &__textarea {}
+    &__textarea {
+        border-radius: 20px;
+        padding: 20px;
+        font-size: 1.2rem;
+
+        &:hover {
+            border: 2px solid $accent;
+        }
+    }
 
     // .form__button
 
-    &__button {}
-}
-
-.link {
-
-    // .link__icon
-
-    &__icon {}
+    &__button {
+        font-size: 1.5rem;
+        @include button;
+        font-weight: bold;
+    }
 }
