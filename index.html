@@ -15,6 +15,11 @@
 
     <a href="index.html" class="header__logo">ИвановаСофия</a>
 
+    <input type="checkbox" id="burger-toggle" class="header__toggle">
+    <label for="burger-toggle" class="header__icon">
+      <span></span>
+    </label>
+
     <nav class="header__menu">
       <a href="#hero" class="menu__link">Главная</a>
       <a href="#about" class="menu__link">Обо мне</a>
@@ -28,333 +33,336 @@
 
     <button type="button" id="button" class="header__button">🌛</button>
 
-    <input type="checkbox" id="burger-toggle" class="header__toggle">
-    <label for="burger-toggle" class="header__icon">
-      <span></span>
-    </label>
+
 
   </header>
 
   <main class="main">
 
-    <!-- Снкция первый экран -->
-    <section class="hero" id="hero">
+    <section class="main__section">
 
-      <img src="image/name.svg" alt="logo" class="hero__logo">
-      <h1 class="hero__title">Привет, я София. Junior Web Developer</h1>
-      <p class="hero__subtitle">Верстаю адаптивные и быстрые интерфейсы. Изучаю JavaScript.<br>Ищу первую
-        стажировку и небольшие фриланс-проекты.</p>
-      <div class="hero__button">
-        <a href="#" class="hero__link">Посмотреть проекты</a>
-        <a href="#" class="hero__link">Написать мне</a>
-      </div>
+      <!-- Снкция первый экран -->
+      <section class="hero" id="hero">
 
-    </section>
-
-    <!-- Снкция обо мне -->
-    <section class="about" id="about">
-
-      <h2 class="about__title">Обо мне</h2>
-
-      <p class="about__text">
-        Я студентка 2 курса по направлению «Информационные системы и программирование». Веб-разработкой увлеклась на
-        первом курсе.<br><br>
-        Люблю создавать интерфейсы, которые одинаково хорошо выглядят и на десктопе, и на телефоне. Сейчас активно
-        изучаю HTML, CSS, JavaScript чтобы делать не просто красивую вёрстку, но и интерактивные приложения.<br><br>
-        Люблю разбираться в новых технологиях и
-        постоянно прокачиваю навыки.
-      </p>
-
-      <div class="about__section">
-
-        <div class="about__card">
-          <h3 class="card__title">Что я изучаю сейчас</h3>
-          <p class="card__text">JavaScript, HTML, CSS. В ближайшие полгода хочу пройти стажировку.</p>
+        <img src="image/name.svg" alt="logo" class="hero__logo">
+        <h1 class="hero__title">Привет, я София. Junior Web Developer</h1>
+        <p class="hero__subtitle">Верстаю адаптивные и быстрые интерфейсы. Изучаю JavaScript.<br>Ищу первую
+          стажировку и небольшие фриланс-проекты.</p>
+        <div class="hero__button">
+          <a href="#" class="hero__link">Посмотреть проекты</a>
+          <a href="#" class="hero__link">Написать мне</a>
         </div>
 
-        <div class="about__card">
-          <h3 class="card__title">Soft skills</h3>
+      </section>
 
-          <ul class="card__list">
-            <li class="card__point">Умею работать в команде</li>
-            <li class="card__point">Не боюсь задавать вопросы</li>
-            <li class="card__point">Соблюдаю дедлайны</li>
-          </ul>
+      <!-- Снкция обо мне -->
+      <section class="about" id="about">
 
-        </div>
-      </div>
+        <h2 class="about__title">Обо мне</h2>
 
-    </section>
+        <p class="about__text">
+          Я студентка 2 курса по направлению «Информационные системы и программирование». Веб-разработкой увлеклась на
+          первом курсе.<br><br>
+          Люблю создавать интерфейсы, которые одинаково хорошо выглядят и на десктопе, и на телефоне. Сейчас активно
+          изучаю HTML, CSS, JavaScript чтобы делать не просто красивую вёрстку, но и интерактивные приложения.<br><br>
+          Люблю разбираться в новых технологиях и
+          постоянно прокачиваю навыки.
+        </p>
 
-    <!-- Снкция навыки -->
-    <section class="skills" id="skills">
+        <div class="about__section">
 
-      <h2 class="skills__title">Навыки</h2>
-
-      <div class="skills__items">
-
-        <div class="skills__section">
-
-          <h2 class="skills__technologies">💻 Frontend</h2>
-
-          <div class="skills__bar">
-
-            <div class="bar__group">
-              <div class="bar__title">HTML5</div>
-              <div class="bar__level">Средний</div>
-            </div>
-
-            <div class="bar__track">
-              <progress class="bar__fill" value="0.85">
-              </progress>
-            </div>
+          <div class="about__card">
+            <h3 class="card__title">Что я изучаю сейчас</h3>
+            <p class="card__text">JavaScript, HTML, CSS. В ближайшие полгода хочу пройти стажировку.</p>
           </div>
 
-          <div class="skills__bar">
+          <div class="about__card">
+            <h3 class="card__title">Soft skills</h3>
 
-            <div class="bar__group">
-              <div class="bar__title">CSS3</div>
-              <div class="bar__level">Базовый</div>
-            </div>
+            <ul class="card__list">
+              <li class="card__point">Умею работать в команде</li>
+              <li class="card__point">Не боюсь задавать вопросы</li>
+              <li class="card__point">Соблюдаю дедлайны</li>
+            </ul>
 
-            <div class="bar__track">
-              <progress class="bar__fill" value="0.7">
-              </progress>
-            </div>
           </div>
-
-          <div class="skills__bar">
-
-            <div class="bar__group">
-              <div class="bar__title">JavaScript</div>
-              <div class="bar__level">Базовый</div>
-            </div>
-
-            <div class="bar__track">
-              <progress class="bar__fill" value="0.4">
-              </progress>
-            </div>
-          </div>
-
         </div>
 
-        <div class="skills__section">
+      </section>
 
-          <h2 class="skills__technologies">Инструменты</h2>
+      <!-- Снкция навыки -->
+      <section class="skills" id="skills">
 
-          <div class="skills__bar">
+        <h2 class="skills__title">Навыки</h2>
 
-            <div class="bar__group">
-              <div class="bar__title">Git</div>
-              <div class="bar__level">Начальный</div>
+        <div class="skills__items">
+
+          <div class="skills__section">
+
+            <h2 class="skills__technologies">💻 Frontend</h2>
+
+            <div class="skills__bar">
+
+              <div class="bar__group">
+                <div class="bar__title">HTML5</div>
+                <div class="bar__level">Средний</div>
+              </div>
+
+              <div class="bar__track">
+                <progress class="bar__fill" value="0.85">
+                </progress>
+              </div>
             </div>
 
-            <div class="bar__track">
-              <progress class="bar__fill" value="0.2"></progress>
+            <div class="skills__bar">
+
+              <div class="bar__group">
+                <div class="bar__title">CSS3</div>
+                <div class="bar__level">Базовый</div>
+              </div>
+
+              <div class="bar__track">
+                <progress class="bar__fill" value="0.7">
+                </progress>
+              </div>
             </div>
-          </div>
 
-          <div class="skills__bar">
+            <div class="skills__bar">
 
-            <div class="bar__group">
-              <div class="bar__title">Figma</div>
-              <div class="bar__level">Средний</div>
-            </div>
+              <div class="bar__group">
+                <div class="bar__title">JavaScript</div>
+                <div class="bar__level">Базовый</div>
+              </div>
 
-            <div class="bar__track">
-              <progress class="bar__fill" value="0.6"></progress>
+              <div class="bar__track">
+                <progress class="bar__fill" value="0.4">
+                </progress>
+              </div>
             </div>
 
           </div>
 
-        </div>
+          <div class="skills__section">
 
-      </div>
+            <h2 class="skills__technologies">Инструменты</h2>
 
-    </section>
+            <div class="skills__bar">
 
-    <!-- Снкция проекты -->
-    <section class="projects" id="projects">
+              <div class="bar__group">
+                <div class="bar__title">Git</div>
+                <div class="bar__level">Начальный</div>
+              </div>
 
-      <h2 class="projects__title">Проекты</h2>
+              <div class="bar__track">
+                <progress class="bar__fill" value="0.2"></progress>
+              </div>
+            </div>
 
-      <div class="projects__items">
+            <div class="skills__bar">
 
-        <div class="projects__section">
+              <div class="bar__group">
+                <div class="bar__title">Figma</div>
+                <div class="bar__level">Средний</div>
+              </div>
 
-          <h2 class="projects__name">Веб-приложение «ЭлектроДрайв»</h2>
-          <p class="projects__text">
-            Веб-приложение «ЭлектроДрайв» предназначено для аренды экологичного
-            транспорта. Пользователь должен пройти регистрацию, предоставив свои персональные данные. После регистрации
-            пользователь может оформить аренду,
-            указав тип используемого автотранспорта или легкого электротранспорта, дату и время
-            начала аренды, желаемую длительность и контактный номер телефона.
-          </p>
+              <div class="bar__track">
+                <progress class="bar__fill" value="0.6"></progress>
+              </div>
 
-          <div class="projects__tegs">
-            <div class="projects__teg">HTML5</div>
-            <div class="projects__teg">CSS3</div>
-            <div class="projects__teg">JavaScript</div>
-          </div>
+            </div>
 
-          <div class="projects__images">
-            <img src="image/progect1.png" alt="project1" class="projects__image">
-            <img src="image/progect1_2.png" alt="project1" class="projects__image">
-            <img src="image/progect1_3.png" alt="project1" class="projects__image">
           </div>
 
         </div>
 
-        <div class="projects__section">
+      </section>
 
-          <h2 class="projects__name">Веб-приложение «Уютный уголок»</h2>
-          <p class="projects__text">
-            Веб-приложение «Уютный уголок» предназначено для бронирования переговорных комнат,
-            конференц-залов и рабочих пространств. Пользователь должен пройти регистрацию, предоставив свои персональные
-            данные.
-          </p>
+      <!-- Снкция проекты -->
+      <section class="projects" id="projects">
 
-          <div class="projects__tegs">
-            <div class="projects__teg">HTML5</div>
-            <div class="projects__teg">CSS3</div>
-            <div class="projects__teg">JavaScript</div>
+        <h2 class="projects__title">Проекты</h2>
+
+        <div class="projects__items">
+
+          <div class="projects__section">
+
+            <h2 class="projects__name">Веб-приложение «ЭлектроДрайв»</h2>
+            <p class="projects__text">
+              Веб-приложение «ЭлектроДрайв» предназначено для аренды экологичного
+              транспорта. Пользователь должен пройти регистрацию, предоставив свои персональные данные. После
+              регистрации
+              пользователь может оформить аренду,
+              указав тип используемого автотранспорта или легкого электротранспорта, дату и время
+              начала аренды, желаемую длительность и контактный номер телефона.
+            </p>
+
+            <div class="projects__tegs">
+              <div class="projects__teg">HTML5</div>
+              <div class="projects__teg">CSS3</div>
+              <div class="projects__teg">JavaScript</div>
+            </div>
+
+            <div class="projects__images">
+              <img src="image/progect1.png" alt="project1" class="projects__image">
+              <img src="image/progect1_2.png" alt="project1" class="projects__image">
+              <img src="image/progect1_3.png" alt="project1" class="projects__image">
+            </div>
+
           </div>
 
-          <div class="projects__images">
-            <img src="image/progect2.png" alt="project2" class="projects__image">
-            <img src="image/progect2_2.png" alt="project2" class="projects__image">
-            <img src="image/progect2_3.png" alt="project2" class="projects__image">
+          <div class="projects__section">
+
+            <h2 class="projects__name">Веб-приложение «Уютный уголок»</h2>
+            <p class="projects__text">
+              Веб-приложение «Уютный уголок» предназначено для бронирования переговорных комнат,
+              конференц-залов и рабочих пространств. Пользователь должен пройти регистрацию, предоставив свои
+              персональные
+              данные.
+            </p>
+
+            <div class="projects__tegs">
+              <div class="projects__teg">HTML5</div>
+              <div class="projects__teg">CSS3</div>
+              <div class="projects__teg">JavaScript</div>
+            </div>
+
+            <div class="projects__images">
+              <img src="image/progect2.png" alt="project2" class="projects__image">
+              <img src="image/progect2_2.png" alt="project2" class="projects__image">
+              <img src="image/progect2_3.png" alt="project2" class="projects__image">
+            </div>
+
+          </div>
+
+          <div class="projects__section">
+
+            <h2 class="projects__name">Веб-приложение «КейтерингЗаказ»</h2>
+            <p class="projects__text">
+              Веб-приложение «КейтерингЗаказ» для заказа выездного обслуживания мероприятий. Клиенты выбирают меню, дату
+              и
+              время, количество персон.
+            </p>
+
+            <div class="projects__tegs">
+              <div class="projects__teg">HTML5</div>
+              <div class="projects__teg">CSS3</div>
+              <div class="projects__teg">JavaScript</div>
+            </div>
+
+            <div class="projects__images">
+              <img src="image/progect3.png" alt="project3" class="projects__image">
+              <img src="image/progect3_2.png" alt="project3" class="projects__image">
+              <img src="image/progect1_3.png" alt="project3" class="projects__image">
+            </div>
+
+          </div>
+
+          <div class="projects__section">
+
+            <h2 class="projects__name">Веб-приложение «Я буду кушац»</h2>
+            <p class="projects__text">Веб-приложение «Я буду кушац» предназначено для бронирования столиков в ресторане.
+              Пользователь должен пройти регистрацию, предоставив свои персональные данные.
+            </p>
+
+            <div class="projects__tegs">
+              <div class="projects__teg">HTML5</div>
+              <div class="projects__teg">CSS3</div>
+              <div class="projects__teg">JavaScript</div>
+            </div>
+
+            <div class="projects__images">
+              <img src="image/progect1.png" alt="project1" class="projects__image">
+              <img src="image/progect1_2.png" alt="project1" class="projects__image">
+              <img src="image/progect1_3.png" alt="project1" class="projects__image">
+            </div>
+
           </div>
 
         </div>
 
-        <div class="projects__section">
+      </section>
 
-          <h2 class="projects__name">Веб-приложение «КейтерингЗаказ»</h2>
-          <p class="projects__text">
-            Веб-приложение «КейтерингЗаказ» для заказа выездного обслуживания мероприятий. Клиенты выбирают меню, дату и
-            время, количество персон.
-          </p>
+      <!-- Снкция образование -->
+      <section class="education" id="education">
 
-          <div class="projects__tegs">
-            <div class="projects__teg">HTML5</div>
-            <div class="projects__teg">CSS3</div>
-            <div class="projects__teg">JavaScript</div>
+        <h2 class="education__title">Образование</h2>
+
+        <!-- <div class="education__section"> -->
+
+        <ul class="education__list">
+
+          <li class="education__point">
+            <h2 class="point__time">Апрель 2026</h2>
+            <h3 class="point__title">Пет-проект</h3>
+            <p class="point__text">
+              Создала свой макет для интернет-магазина «Фермерский дворик» по продаже фермерских мясных продуктов.
+            </p>
+          </li>
+
+          <li class="education__point">
+            <h2 class="point__time">Октябрь 2025</h2>
+            <h3 class="point__title">JavaScript</h3>
+            <p class="point__text">
+              Знакомство и изучение первого языка программирования JavaScript.
+            </p>
+          </li>
+
+          <li class="education__point">
+            <h2 class="point__time">Апрель 2025</h2>
+            <h3 class="point__title">Курс «Веб-вёрстка для начинающих»</h3>
+            <p class="point__text">
+              Самостоятельно прошла онлайн-курс. Изучила HTML и CSS. Сверстала первый макет сайта.
+            </p>
+          </li>
+
+          <li class="education__point">
+            <h2 class="point__time">Сентябрь 2024</h2>
+            <h3 class="point__title">Поступление в колледж</h3>
+            <p class="point__text">
+              Начало обучения по специальности «Информационные системы и программирование». Первое знакомство с HTML и
+              CSS.
+            </p>
+          </li>
+
+        </ul>
+
+        <!-- </div> -->
+
+      </section>
+
+      <!-- Снкция контакты -->
+      <section class="contacts" id="contacts">
+
+        <h2 class="contacts__title">Контакты</h2>
+
+        <form action="#" class="form">
+
+          <div class="form__section">
+            <label class="form__label">Имя</label>
+            <input type="text" class="form__input" id="name" name="name" placeholder="Ваше имя" required>
           </div>
 
-          <div class="projects__images">
-            <img src="image/progect3.png" alt="project3" class="projects__image">
-            <img src="image/progect3_2.png" alt="project3" class="projects__image">
-            <img src="image/progect1_3.png" alt="project3" class="projects__image">
+          <div class="form__section">
+            <label class="form__label">Email</label>
+            <input type="email" class="form__input" id="email" name="email" placeholder="yandex@email.ru" required>
           </div>
+          <textarea name="message" id="message" class="form__textarea" placeholder="Сообщение..." required></textarea>
+          <button type="submit" class="form__button">Отправить</button>
+        </form>
 
+        <div class="contacts__links">
+          <a href="#" class="contacts__link">
+            📧 si737844@gmail.com
+          </a>
+          <a href="#" class="contacts__link">
+            ✈ Telegram: Sofia
+          </a>
+          <a href="#" class="contacts__link">
+            🔵 GitVerse: ivanova
+          </a>
         </div>
 
-        <div class="projects__section">
-
-          <h2 class="projects__name">Веб-приложение «Я буду кушац»</h2>
-          <p class="projects__text">Веб-приложение «Я буду кушац» предназначено для бронирования столиков в ресторане.
-            Пользователь должен пройти регистрацию, предоставив свои персональные данные.
-          </p>
-
-          <div class="projects__tegs">
-            <div class="projects__teg">HTML5</div>
-            <div class="projects__teg">CSS3</div>
-            <div class="projects__teg">JavaScript</div>
-          </div>
-
-          <div class="projects__images">
-            <img src="image/progect1.png" alt="project1" class="projects__image">
-            <img src="image/progect1_2.png" alt="project1" class="projects__image">
-            <img src="image/progect1_3.png" alt="project1" class="projects__image">
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <!-- Снкция образование -->
-    <section class="education" id="education">
-
-      <h2 class="education__title">Образование</h2>
-
-      <!-- <div class="education__section"> -->
-
-      <ul class="education__list">
-
-        <li class="education__point">
-          <h2 class="point__time">Апрель 2026</h2>
-          <h3 class="point__title">Пет-проект</h3>
-          <p class="point__text">
-            Создала свой макет для интернет-магазина «Фермерский дворик» по продаже фермерских мясных продуктов.
-          </p>
-        </li>
-
-        <li class="education__point">
-          <h2 class="point__time">Октябрь 2025</h2>
-          <h3 class="point__title">JavaScript</h3>
-          <p class="point__text">
-            Знакомство и изучение первого языка программирования JavaScript.
-          </p>
-        </li>
-
-        <li class="education__point">
-          <h2 class="point__time">Апрель 2025</h2>
-          <h3 class="point__title">Курс «Веб-вёрстка для начинающих»</h3>
-          <p class="point__text">
-            Самостоятельно прошла онлайн-курс. Изучила HTML и CSS. Сверстала первый макет сайта.
-          </p>
-        </li>
-
-        <li class="education__point">
-          <h2 class="point__time">Сентябрь 2024</h2>
-          <h3 class="point__title">Поступление в колледж</h3>
-          <p class="point__text">
-            Начало обучения по специальности «Информационные системы и программирование». Первое знакомство с HTML и
-            CSS.
-          </p>
-        </li>
-
-      </ul>
-
-      <!-- </div> -->
-
-    </section>
-
-    <!-- Снкция контакты -->
-    <section class="contacts" id="contacts">
-
-      <h2 class="contacts__title">Контакты</h2>
-
-      <form action="#" class="form">
-
-        <div class="form__section">
-          <label class="form__label">Имя</label>
-          <input type="text" class="form__input" id="name" name="name" placeholder="Ваше имя" required>
-        </div>
-
-        <div class="form__section">
-          <label class="form__label">Email</label>
-          <input type="email" class="form__input" id="email" name="email" placeholder="yandex@email.ru" required>
-        </div>
-        <textarea name="message" id="message" class="form__textarea" placeholder="Сообщение..." required></textarea>
-        <button type="submit" class="form__button">Отправить</button>
-      </form>
-
-      <div class="contacts__links">
-        <a href="#" class="contacts__link">
-          📧 si737844@gmail.com
-        </a>
-        <a href="#" class="contacts__link">
-          ✈ Telegram: Sofia
-        </a>
-        <a href="#" class="contacts__link">
-          🔵 GitVerse: ivanova
-        </a>
-      </div>
-
+      </section>
     </section>
 
   </main>

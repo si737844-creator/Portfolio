@@ -20,25 +20,31 @@ body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 1rem;
     background-color: $tertiary;
+
+    @media (max-width: 768px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+    }
 }
 
 .header {
-    justify-content: center;
-    display: grid;
+    justify-content: space-between;
+    display: flex;
     gap: 20px;
     padding: 20px;
-    grid-template-columns: 300px auto 200px 100px;
+    // grid-template-columns: 300px auto 200px 100px;
     grid-auto-flow: column;
-    place-items: center;
+    align-items: center;
     background-color: light($primary, 25);
 
-    position: sticky;
-    z-index: 999;
+    position: fixed;
+    z-index: 1000;
     top: 0;
-    // left: 0;
+    left: 0;
     width: 100%;
 
-    @media (max-width: 540px) {
+    @media (max-width: 768px) {
         display: grid;
         grid-auto-flow: column;
     }
@@ -47,11 +53,14 @@ body {
         text-decoration: none;
         font-size: 1.5rem;
         text-transform: lowercase;
-        background: linear-gradient(45deg, $accent, $primary);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        // color: $accent;
+        color: #000;
         font-weight: bold;
+        align-self: center;
+
+        @media (max-width: 768px) {
+            align-self: center;
+            order: 0;
+        }
     }
 
     // .header__menu
@@ -71,6 +80,7 @@ body {
         text-transform: lowercase;
         text-align: center;
         color: #000;
+
     }
 
     // .header__button
@@ -81,6 +91,10 @@ body {
         width: 40px;
         background-color: $tertiary;
         border: 1px solid $accent;
+
+        @media (max-width: 768px) {
+            order: 1;
+        }
     }
 
     // .header__toggle
@@ -91,12 +105,19 @@ body {
     // .header__icon
     &__icon {
         display: none;
-        position: fixed;
+        width: 28px;
+        height: 22px;
+        position: relative;
+        cursor: pointer;
 
-        margin: 30px;
+        @media (max-width: 768px) {
+            display: block;
+            order: 2;
+        }
+
     }
 
-    @media (max-width: 540px) {
+    @media (max-width: 768px) {
 
         &__icon {
             display: block;
@@ -181,16 +202,39 @@ body {
 }
 
 .menu {
-    // .menu__link
+    display: grid;
+    gap: 20px;
+    align-items: center;
 
+    // .menu__link
     &__link {
+        position: relative;
         @include button;
+
     }
 }
 
 .main {
     display: grid;
-    place-items: center;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+        display: grid;
+        gap: 20px;
+        padding: 20px;
+        width: 500px;
+    }
+
+    // .main__section
+
+    &__section {
+        display: grid;
+        justify-content: center;
+        width: 1000px;
+    }
+
 
 }
 
@@ -202,5 +246,9 @@ body {
     // .footer__copy
     &__copy {
         text-align: center;
+    }
+
+    @media (max-width: 768px) {
+        display: grid;
     }
 }

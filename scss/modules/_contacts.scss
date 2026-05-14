@@ -38,8 +38,7 @@
     display: grid;
     gap: 20px;
     background-color: light($accent, 5);
-    min-width: 1000px;
-    min-height: 500px;
+    width: 500px;
     padding: 30px 40px;
     border-radius: 30px;
     border: 5px solid $primary;

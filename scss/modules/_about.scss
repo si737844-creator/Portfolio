@@ -8,13 +8,19 @@
     padding-top: 40px;
     place-items: center;
     justify-content: center;
-    width: 1000px;
+
+
+    @media (max-width: 768px) {
+        padding: 10px;
+        grid-template-columns: 1fr;
+    }
 
     // .about__title
     &__title {
         text-align: center;
         padding: 10px;
         font-size: 2.1rem;
+
     }
 
 
@@ -25,13 +31,14 @@
         font-size: 1.2rem;
         background-color: light($primary, 30);
         border-radius: 20px;
-
+        line-height: 1.8;
     }
 
     // .about__section
 
     &__section {
         display: grid;
+
         gap: 20px;
         padding: 20px;
         place-items: center;

@@ -19,6 +19,7 @@
         display: grid;
         gap: 100px;
         padding: 20px 40px;
+        // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-template-columns: repeat(2, 1fr);
         border-radius: 20px;
         background-color: light($primary, 30);

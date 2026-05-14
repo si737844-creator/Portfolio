@@ -6,9 +6,10 @@
     gap: 20px;
     padding: 20px;
     padding-top: 40px;
-    width: 1000px;
+
     place-items: center;
     place-content: center;
+
 
     &__title {
         text-align: center;
@@ -19,8 +20,10 @@
     // .projects__items
     &__items {
         display: grid;
+
         gap: 20px;
         padding: 20px;
+
     }
 
 
@@ -43,6 +46,7 @@
 
     &__text {
         font-size: 1.2rem;
+        line-height: 1.7;
     }
 
     // .projects__tegs
@@ -51,8 +55,7 @@
         display: grid;
         gap: 5px;
         grid-template-columns: repeat(3, 1fr);
-        width: 200px;
-
+        justify-self: start;
     }
 
     // .projects__teg
@@ -61,6 +64,7 @@
         background-color: light($secondary, 20);
         padding: 6px;
         border-radius: 10px;
+        text-align: center;
     }
 
     // .projects__images
@@ -70,8 +74,15 @@
         gap: 10px;
 
         grid-template-columns: repeat(3, 1fr);
-        width: 1000px;
         place-items: center;
+
+        // object-fit: cover;
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+            width: 500px;
+            place-items: center;
+            justify-content: center;
+        }
     }
 
     // .projects__image
