@@ -3,7 +3,7 @@
 @mixin button {
     border: 1px solid $primary;
     border-radius: 20px;
-    background-color: dark($primary, 15);
+    background-color: dark($primary, 20);
     color: $tertiary;
     font-size: 1rem;
     transition: all 0.5s;

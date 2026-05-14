@@ -2,35 +2,83 @@
 @use 'mixin' as *;
 
 .projects {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    padding-top: 40px;
+    width: 1000px;
+    place-items: center;
+    place-content: center;
 
-    // .projects__title
-    &__title {}
+    &__title {
+        text-align: center;
+        // padding: 10px;
+        font-size: 2.1rem;
+    }
+
+    // .projects__items
+    &__items {
+        display: grid;
+        gap: 20px;
+        padding: 20px;
+    }
 
 
     // .projects__section
-    &__section {}
+    &__section {
+        display: grid;
+        gap: 20px;
+        padding: 20px;
+        background-color: light($primary, 30);
+        border-radius: 20px;
+    }
 
     // .projects__name
 
-    &__name {}
+    &__name {
+        font-size: 1.5rem;
+    }
 
     // .projects__text
 
-    &__text {}
+    &__text {
+        font-size: 1.2rem;
+    }
 
     // .projects__tegs
 
-    &__tegs {}
+    &__tegs {
+        display: grid;
+        gap: 5px;
+        grid-template-columns: repeat(3, 1fr);
+        width: 200px;
+
+    }
 
     // .projects__teg
 
-    &__teg {}
+    &__teg {
+        background-color: light($secondary, 20);
+        padding: 6px;
+        border-radius: 10px;
+    }
 
     // .projects__images
 
-    &__images {}
+    &__images {
+        display: grid;
+        gap: 10px;
+
+        grid-template-columns: repeat(3, 1fr);
+        width: 1000px;
+        place-items: center;
+    }
 
     // .projects__image
 
-    &__image {}
+    &__image {
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+    }
 }

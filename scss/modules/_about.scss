@@ -7,6 +7,8 @@
     padding: 20px;
     padding-top: 40px;
     place-items: center;
+    justify-content: center;
+    width: 1000px;
 
     // .about__title
     &__title {
@@ -21,9 +23,9 @@
     &__text {
         padding: 20px 30px;
         font-size: 1.2rem;
-        background-color: light($accent, 70);
+        background-color: light($primary, 30);
         border-radius: 20px;
-        width: 1000px;
+
     }
 
     // .about__section
@@ -32,6 +34,9 @@
         display: grid;
         gap: 20px;
         padding: 20px;
+        place-items: center;
+        justify-content: center;
+        width: 1000px;
     }
 
     // .about__card
@@ -39,11 +44,10 @@
     &__card {
         display: grid;
         gap: 10px;
-        padding: 10px 30px;
+        padding: 20px 30px;
         background-color: light($secondary, 20);
         border-radius: 20px;
         width: 1000px;
-
     }
 }
 

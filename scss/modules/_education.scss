@@ -2,21 +2,50 @@
 @use 'mixin' as *;
 
 .education {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    padding-top: 40px;
+
+    place-items: center;
+    justify-content: center;
+    width: 1000px;
+
+    &__title {
+        text-align: center;
+        font-size: 2.1rem;
+        padding: 10px;
+    }
+
+    // // .education__section
+    // &__section {}
+
 
     // .education__list
+    &__list {
+        display: grid;
+        gap: 20px;
+        padding: 30px;
 
-    &__list {}
+        width: 1000px;
+
+        background-color: light($secondary, 20);
+        border-radius: 20px;
+    }
 
     // .education__point
-
-    &__point {}
+    &__point {
+        display: grid;
+        gap: 5px;
+    }
 }
 
 .point {
 
     // .point__time
-
-    &__time {}
+    &__time {
+        list-style-type: disc;
+    }
 
     // .point__title
 
@@ -24,5 +53,7 @@
 
     // .point__text
 
-    &__text {}
+    &__text {
+        font-size: 1.2rem;
+    }
 }
