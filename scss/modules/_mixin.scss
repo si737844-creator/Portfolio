@@ -1,0 +1,19 @@
+@use 'color' as *;
+
+@mixin button {
+    border: 1px solid $primary;
+    border-radius: 20px;
+    background-color: dark($primary, 15);
+    color: $tertiary;
+    font-size: 1rem;
+    transition: all 0.5s;
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+
+    &:hover {
+        background-color: $tertiary;
+        color: $accent;
+        border: 1px solid $primary;
+    }
+}
