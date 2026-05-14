@@ -2,24 +2,33 @@
 @use 'mixin' as *;
 
 .hero {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    place-items: center;
 
-    // .hero__logo
-
-    &__logo {}
+    &__logo {
+        border-radius: 50%;
+        height: 200px;
+    }
 
     // .hero__title
-
-    &__title {}
+    &__title {
+        text-align: center;
+    }
 
     // .hero__subtitle
-
-    &__subtitle {}
+    &__subtitle {
+        text-align: center;
+    }
 
     // .hero__button
-
-    &__button {}
+    &__button {
+        padding: 20px;
+    }
 
     // .hero__link
-
-    &__link {}
+    &__link {
+        @include button;
+    }
 }

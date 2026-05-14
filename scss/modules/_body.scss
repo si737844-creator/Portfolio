@@ -23,13 +23,25 @@ body {
 }
 
 .header {
+    justify-content: center;
     display: grid;
     gap: 20px;
     padding: 20px;
-    grid-template-columns: 300px 1fr 200px 100px;
-    // grid-auto-flow: column;
-    align-items: center;
+    grid-template-columns: 300px auto 200px 100px;
+    grid-auto-flow: column;
+    place-items: center;
     background-color: light($primary, 25);
+
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    // left: 0;
+    width: 100%;
+
+    @media (max-width: 540px) {
+        display: grid;
+        grid-auto-flow: column;
+    }
 
     &__logo {
         text-decoration: none;
@@ -46,9 +58,11 @@ body {
     &__menu {
         display: grid;
         gap: 20px;
-        padding: 20px;
+        // padding: 20px;
+
         grid-auto-flow: column;
-        justify-items: center;
+        place-items: center;
+        place-content: center;
     }
 
     // .header__resume

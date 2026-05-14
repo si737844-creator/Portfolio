@@ -2,29 +2,62 @@
 @use 'mixin' as *;
 
 .about {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    place-items: center;
+
+    // .about__title
+    &__title {
+        text-align: center;
+        padding: 10px;
+        font-size: 2rem;
+    }
+
 
     // .about__text
 
-    &__text {}
+    &__text {
+        padding: 20px 30px;
+        font-size: 1.2rem;
+        background-color: light($accent, 70);
+        border-radius: 20px;
+        width: 1000px;
+    }
 
     // .about__section
 
-    &__section {}
+    &__section {
+        display: grid;
+        gap: 20px;
+        padding: 20px;
+    }
 
     // .about__card
 
-    &__card {}
+    &__card {
+        display: grid;
+        gap: 10px;
+        padding: 10px 30px;
+        background-color: light($secondary, 20);
+        border-radius: 20px;
+        width: 1000px;
+
+    }
 }
 
 .card {
 
-    // .card__title
 
-    &__title {}
+    &__title {
+        font-size: 1.5rem;
+    }
 
     // .card__text
 
-    &__text {}
+    &__text {
+        font-size: 1.2rem;
+    }
 
     // .card__list
 

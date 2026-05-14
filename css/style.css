@@ -18,12 +18,24 @@ body {
 }
 
 .header {
+  justify-content: center;
   display: grid;
   gap: 20px;
   padding: 20px;
-  grid-template-columns: 300px 1fr 200px 100px;
-  align-items: center;
+  grid-template-columns: 300px auto 200px 100px;
+  grid-auto-flow: column;
+  place-items: center;
   background-color: rgb(224.988372093, 212.8284883721, 252.6715116279);
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  width: 100%;
+}
+@media (max-width: 540px) {
+  .header {
+    display: grid;
+    grid-auto-flow: column;
+  }
 }
 .header__logo {
   text-decoration: none;
@@ -37,9 +49,9 @@ body {
 .header__menu {
   display: grid;
   gap: 20px;
-  padding: 20px;
   grid-auto-flow: column;
-  justify-items: center;
+  place-items: center;
+  place-content: center;
 }
 .header__resume {
   text-decoration: none;
@@ -154,4 +166,78 @@ body {
 }
 .footer__copy {
   text-align: center;
+}
+
+.about {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  place-items: center;
+}
+.about__title {
+  text-align: center;
+  padding: 10px;
+  font-size: 2rem;
+}
+.about__text {
+  padding: 20px 30px;
+  font-size: 1.2rem;
+  background-color: rgb(184.2631578947, 197.7368421053, 229.7368421053);
+  border-radius: 20px;
+  width: 1000px;
+}
+.about__section {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+}
+.about__card {
+  display: grid;
+  gap: 10px;
+  padding: 10px 30px;
+  background-color: rgb(198.8507462687, 240.223880597, 170.776119403);
+  border-radius: 20px;
+  width: 1000px;
+}
+
+.card__title {
+  font-size: 1.5rem;
+}
+.card__text {
+  font-size: 1.2rem;
+}
+.hero {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  place-items: center;
+}
+.hero__logo {
+  border-radius: 50%;
+  height: 200px;
+}
+.hero__title {
+  text-align: center;
+}
+.hero__subtitle {
+  text-align: center;
+}
+.hero__button {
+  padding: 20px;
+}
+.hero__link {
+  border: 1px solid #8b5cf6;
+  border-radius: 20px;
+  background-color: rgb(87.4069767442, 19.5029069767, 241.9970930233);
+  color: #ffffff;
+  font-size: 1rem;
+  transition: all 0.5s;
+  text-decoration: none;
+  padding: 15px;
+  text-align: center;
+}
+.hero__link:hover {
+  background-color: #ffffff;
+  color: #0f172a;
+  border: 1px solid #8b5cf6;
 }
