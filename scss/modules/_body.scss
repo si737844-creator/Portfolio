@@ -59,9 +59,11 @@ body {
     // .header__resume
     &__resume {
         text-decoration: none;
-        text-transform: lowercase;
         text-align: center;
         color: #000;
+        background-color: $tertiary;
+        padding: 10px;
+        border-radius: 20px;
     }
 
     // .header__button
@@ -70,7 +72,7 @@ body {
         border-radius: 10px;
         height: 40px;
         width: 40px;
-        background-color: $tertiary;
+        background-color: $accent;
         border: 1px solid $accent;
     }
 
@@ -88,6 +90,8 @@ body {
     // Мобильная версия
     @media (max-width: 768px) {
         padding: 12px 15px;
+        grid-template-columns: auto 1fr auto auto;
+        gap: 10px;
 
         &__logo {
             font-size: 1.1rem;
@@ -100,12 +104,14 @@ body {
             background: rgba(255, 255, 255, 0.5);
             border-radius: 20px;
             z-index: 1001;
+            justify-self: end;
         }
 
         &__button {
             height: 35px;
             width: 35px;
             z-index: 1001;
+            justify-self: end;
         }
 
         &__icon {
@@ -115,6 +121,8 @@ body {
             position: relative;
             cursor: pointer;
             z-index: 1001;
+            justify-self: end;
+            order: 3;
 
             &::after,
             &::before,
@@ -160,7 +168,7 @@ body {
 
         &__menu {
             position: fixed;
-            left: -100%;
+            right: -100%;
             top: 0;
             bottom: 0;
             width: 80%;
@@ -172,12 +180,13 @@ body {
             justify-content: center;
             align-items: center;
             gap: 25px;
-            transition: left 0.3s ease;
-            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+            transition: right 0.3s ease;
+            box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
         }
 
         &__toggle:checked~&__menu {
-            left: 0;
+            right: 0;
+            left: auto;
         }
     }
 
@@ -229,5 +238,182 @@ body {
     &__copy {
         text-align: center;
         font-size: 0.9rem;
+    }
+}
+
+
+// Темная тема для body
+body.dark-theme {
+    background-color: $accent;
+    color: $tertiary;
+
+    .header {
+        background-color: light($accent, 20);
+
+        &__logo {
+            color: $tertiary;
+        }
+
+        &__resume {
+            background-color: $accent;
+            color: $tertiary;
+        }
+
+        &__button {
+            background-color: $tertiary;
+            border-color: $accent;
+        }
+
+        &__icon {
+
+            &::after,
+            &::before,
+            span {
+                background-color: $accent;
+            }
+        }
+
+        &__menu {
+            // background-color: $tertiary;
+        }
+    }
+
+    .menu__link {
+        background-color: dark($primary, 20);
+        color: $tertiary;
+
+        &:hover {
+            background-color: $tertiary;
+            color: $accent;
+            border-color: $primary;
+        }
+    }
+
+    .about {
+        &__text {
+            background-color: light($primary, 20);
+            color: $accent;
+        }
+
+        &__card {
+            background-color: light($secondary, 15);
+            color: $accent;
+        }
+    }
+
+    .card__point {
+        color: $accent;
+    }
+
+    .skills {
+        &__items {
+            background-color: light($primary, 15);
+        }
+
+        &__technologies {
+            color: $accent;
+        }
+    }
+
+    .bar {
+
+        &__title,
+        &__level {
+            color: $accent;
+        }
+
+        &__fill::-webkit-progress-bar {
+            background-color: #2a2a3e;
+        }
+    }
+
+    .projects {
+        &__section {
+            background-color: light($primary, 15);
+            color: $accent;
+        }
+
+        &__teg {
+            background-color: light($secondary, 15);
+            color: $accent;
+        }
+    }
+
+    .education {
+        &__list {
+            background-color: light($secondary, 15);
+            color: $accent;
+        }
+
+        &__point {
+            border-bottom-color: rgba($accent, 0.2);
+        }
+    }
+
+    .point {
+        &__time {
+            color: #a0a0b0;
+        }
+
+        &__title,
+        &__text {
+            color: $accent;
+        }
+    }
+
+    .contacts {
+        &__link {
+            background-color: light($accent, 15);
+            color: $tertiary;
+            border-color: $tertiary;
+
+            &:hover {
+                background-color: $tertiary;
+                color: $accent;
+                border-color: $primary;
+            }
+        }
+    }
+
+    .form {
+        border-color: $tertiary;
+
+        &__label {
+            color: $tertiary;
+        }
+
+        &__input {
+            background-color: $accent;
+            border-color: $tertiary;
+
+            &::-webkit-input-placeholder {
+                color: $tertiary;
+            }
+
+            &:focus,
+            &:hover {
+                border-color: $accent;
+            }
+        }
+
+        &__textarea {
+            background-color: $accent;
+            border-color: $tertiary;
+            color: $accent;
+
+            &::-webkit-input-placeholder {
+                color: $tertiary;
+            }
+
+            &:focus,
+            &:hover {
+                border-color: $accent;
+            }
+        }
+    }
+
+    .footer {
+        background-color: light($accent, 20);
+        color: $tertiary;
     }
 }
