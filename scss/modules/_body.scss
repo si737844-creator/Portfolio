@@ -21,20 +21,14 @@ body {
     font-size: 1rem;
     background-color: $tertiary;
 
-    @media (max-width: 768px) {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 1fr auto;
-    }
 }
 
 .header {
     justify-content: space-between;
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
     gap: 20px;
     padding: 20px;
-    // grid-template-columns: 300px auto 200px 100px;
-    grid-auto-flow: column;
     align-items: center;
     background-color: light($primary, 25);
 
@@ -44,34 +38,22 @@ body {
     left: 0;
     width: 100%;
 
-    @media (max-width: 768px) {
-        display: grid;
-        grid-auto-flow: column;
-    }
 
     &__logo {
         text-decoration: none;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         text-transform: lowercase;
         color: #000;
         font-weight: bold;
         align-self: center;
-
-        @media (max-width: 768px) {
-            align-self: center;
-            order: 0;
-        }
     }
 
     // .header__menu
     &__menu {
         display: grid;
-        gap: 20px;
-        // padding: 20px;
-
         grid-auto-flow: column;
-        place-items: center;
-        place-content: center;
+        gap: 20px;
+        align-items: center;
     }
 
     // .header__resume
@@ -80,7 +62,6 @@ body {
         text-transform: lowercase;
         text-align: center;
         color: #000;
-
     }
 
     // .header__button
@@ -91,10 +72,6 @@ body {
         width: 40px;
         background-color: $tertiary;
         border: 1px solid $accent;
-
-        @media (max-width: 768px) {
-            order: 1;
-        }
     }
 
     // .header__toggle
@@ -105,111 +82,120 @@ body {
     // .header__icon
     &__icon {
         display: none;
-        width: 28px;
-        height: 22px;
-        position: relative;
-        cursor: pointer;
-
-        @media (max-width: 768px) {
-            display: block;
-            order: 2;
-        }
 
     }
 
+    // Мобильная версия
     @media (max-width: 768px) {
+        padding: 12px 15px;
+
+        &__logo {
+            font-size: 1.1rem;
+            z-index: 1001;
+        }
+
+        &__resume {
+            font-size: 0.8rem;
+            padding: 5px 10px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+            z-index: 1001;
+        }
+
+        &__button {
+            height: 35px;
+            width: 35px;
+            z-index: 1001;
+        }
 
         &__icon {
             display: block;
-            height: 25px;
-            width: 30px;
-            justify-self: end;
-            align-self: center;
+            width: 28px;
+            height: 22px;
+            position: relative;
+            cursor: pointer;
+            z-index: 1001;
 
             &::after,
             &::before,
             span {
+                content: '';
                 position: absolute;
                 width: 100%;
                 height: 3px;
-                background-color: $secondary;
-                transition: .3s;
+                background-color: $accent;
+                transition: all 0.3s ease;
+                border-radius: 2px;
             }
 
             &::before {
-                content: "";
                 top: 0;
             }
 
             &::after {
-                content: "";
                 bottom: 0;
             }
 
             & span {
-                top: 11px;
+                top: 9.5px;
             }
         }
 
         &__toggle:checked~&__icon {
             &::before {
-                top: 12px;
-                transform: rotate(-45deg);
-            }
-
-            &::after {
-                bottom: 10px;
+                top: 9.5px;
                 transform: rotate(45deg);
             }
 
-            & span {
-                top: 12px;
+            &::after {
+                bottom: 9.5px;
                 transform: rotate(-45deg);
             }
 
-            z-index: 999;
+            & span {
+                opacity: 0;
+                transform: scale(0);
+            }
         }
 
         &__menu {
             position: fixed;
-            left: 0;
-            right: 0;
+            left: -100%;
+            top: 0;
+            bottom: 0;
+            width: 80%;
+            max-width: 300px;
             background-color: $tertiary;
-
-            top: -100vh;
-            bottom: 100vh;
-
-            z-index: 900;
-
-            display: grid;
-            grid-auto-flow: row;
-            place-items: center;
-            place-content: center;
-
-            gap: 10px;
-            transition: all 0.5s;
-
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            transition: left 0.3s ease;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
         }
 
         &__toggle:checked~&__menu {
-            top: 0;
-            bottom: 0;
+            left: 0;
         }
-
     }
 
 
 }
 
 .menu {
-    display: grid;
-    gap: 20px;
-    align-items: center;
 
     // .menu__link
     &__link {
         position: relative;
         @include button;
+
+        @media (max-width: 768px) {
+            width: 160px;
+            font-size: 0.9rem;
+            padding: 12px;
+        }
 
     }
 }
@@ -217,22 +203,18 @@ body {
 .main {
     display: grid;
     gap: 20px;
-    padding: 20px;
+    padding: 80px 20px 20px;
     justify-content: center;
 
-    @media (max-width: 768px) {
-        display: grid;
-        gap: 20px;
-        padding: 20px;
-        width: 500px;
-    }
 
     // .main__section
 
     &__section {
         display: grid;
         justify-content: center;
-        width: 1000px;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
     }
 
 
@@ -246,9 +228,6 @@ body {
     // .footer__copy
     &__copy {
         text-align: center;
-    }
-
-    @media (max-width: 768px) {
-        display: grid;
+        font-size: 0.9rem;
     }
 }
