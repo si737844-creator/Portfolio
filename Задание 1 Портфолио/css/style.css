@@ -321,6 +321,55 @@ body.dark-theme .footer {
   color: #F9FAFB;
 }
 
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+/* Стили для тёмной темы */
+body.dark-theme .notification {
+  background: #1f2937;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-theme .notification span:not(.notification-close) {
+  color: #e5e7eb !important;
+}
+
+body.dark-theme .notification-close {
+  color: #9ca3af !important;
+}
+
+body.dark-theme .notification-close:hover {
+  color: #f87171 !important;
+  background: rgba(248, 113, 113, 0.1);
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+  .notification {
+    left: 20px !important;
+    right: 20px !important;
+    bottom: 10px !important;
+    min-width: auto !important;
+    max-width: none !important;
+  }
+}
 .about {
   display: grid;
   gap: 20px;
@@ -706,6 +755,13 @@ body.dark-theme .footer {
   padding: 20px;
   background-color: rgb(205.2829268293, 223.2926829268, 252.7170731707);
   border-radius: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.projects__section:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  background-color: rgb(229.6634146341, 238.8414634146, 253.8365853659);
 }
 .projects__name {
   font-size: 1.5rem;

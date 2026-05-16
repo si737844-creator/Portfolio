@@ -33,6 +33,16 @@
         padding: 20px;
         background-color: light($primary, 30);
         border-radius: 20px;
+
+        transition: all 0.3s ease;
+        cursor: pointer;
+
+        // Hover-эффект для карточки проекта
+        &:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            background-color: light($primary, 35);
+        }
     }
 
     // .projects__name

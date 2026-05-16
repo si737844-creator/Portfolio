@@ -417,3 +417,59 @@ body.dark-theme {
         color: $tertiary;
     }
 }
+
+
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+/* Стили для тёмной темы */
+body.dark-theme .notification {
+    background: #1f2937;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-theme .notification span:not(.notification-close) {
+    color: #e5e7eb !important;
+}
+
+body.dark-theme .notification-close {
+    color: #9ca3af !important;
+}
+
+body.dark-theme .notification-close:hover {
+    color: #f87171 !important;
+    background: rgba(248, 113, 113, 0.1);
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .notification {
+        left: 20px !important;
+        right: 20px !important;
+        bottom: 10px !important;
+        min-width: auto !important;
+        max-width: none !important;
+    }
+}
